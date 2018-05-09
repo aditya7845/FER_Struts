@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+ <!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 1.1//EN"
+       "http://jakarta.apache.org/struts/dtds/tiles-config_1_1.dtd">
+
+
+<!-- This is a blank Tiles definition file with a commented example. -->
+
+<tiles-definitions>
+
+	<definition name="mainLayout" path="/layout/MainLayout.jsp">
+		<put name="title" value="FER"></put>
+		<put name="header" value="/layout/header.jsp" />
+		<put name="leftFrame" value="/layout/LeftFrame.jsp" />
+		<put name="body" value="/layout/body.jsp" />
+		<put name="footer" value="/layout/Footer.jsp" />
+	</definition>
+
+	<definition name="Dashboard" extends="mainLayout">
+		<put name="title" value="Dashboard"></put>
+		<put name="body" value="/Dashboard.jsp" />
+	</definition>
+
+
+
+	<definition name="AddExpense" extends="mainLayout">
+		<put name="title" value="FER-Add"></put>
+		<put name="body" value="/AddExpense.jsp" />
+	</definition>
+	<definition name="success" extends="mainLayout">
+		<put name="title" value="FER-Add"></put>
+		<put name="body" value="/AddExpenseSuccess.jsp" />
+	</definition>
+	<definition name="failure" extends="mainLayout">
+		<put name="title" value="FER-Add"></put>
+		<put name="body" value="/AddExpenseFailure.jsp" />
+	</definition>
+
+
+	<definition name="ResetPassword" extends="mainLayout">
+		<put name="title" value="FER-Password" />
+		<put name="body" value="/ResetPassword.jsp" />
+	</definition>
+	<definition name="Success" extends="mainLayout">
+		<put name="title" value="FER-Password" />
+		<put name="body" value="/ResetPasswordSuccess.jsp" />
+	</definition>
+	<definition name="Failure" extends="mainLayout">
+		<put name="title" value="FER-Password" />
+		<put name="body" value="/ResetPasswordFail.jsp" />
+	</definition>
+
+
+	<definition name="editExpenseDropdown" extends="mainLayout">
+		<put name="body" value="/EditExpenseDropdown.jsp" />
+	</definition>
+	<definition name="editExpenseStatus" extends="mainLayout">
+		<put name="body" value="/EditExpenseStatus.jsp" />
+	</definition>
+	<definition name="displayEditExpense" extends="mainLayout">
+		<put name="body" value="/EditExpense.jsp" />
+	</definition>
+
+
+	<definition name="deleteExpenseDropdown" extends="mainLayout">
+		<put name="body" value="/DeleteExpenseDropDown.jsp"></put>
+	</definition>
+	<definition name="deleteExpenseStatus" extends="mainLayout">
+		<put name="body" value="/DeleteExpenseStatus.jsp"></put>
+	</definition>
+
+
+	<definition name="ExpenseReport" extends="mainLayout">
+		<put name="title" value="FER-Report" />
+		<put name="body" value="/ExpenseReport.jsp" />
+	</definition>
+	<definition name="ExpenseSuccess" extends="mainLayout">
+		<put name="title" value="FER-Report" />
+		<put name="body" value="/ExpenseReportSuccess.jsp" />
+	</definition>
+	<definition name="ExpenseFailure" extends="mainLayout">
+		<put name="title" value="FER-Report" />
+		<put name="body" value="/ExpenseReportFail.jsp" />
+	</definition>
+
+
+	<definition name="nameInfo" extends="mainLayout">
+		<put name="title" value="Name Info" />
+		<put name="body" value="/UpdatePersonalName.jsp" />
+	</definition>
+	<definition name="contactInfo" extends="mainLayout">
+		<put name="title" value="Contact Info" />
+		<put name="body" value="/UpdatePersonalContactInfo.jsp" />
+	</definition>
+	<definition name="addressInfo" extends="mainLayout">
+		<put name="title" value="Adress Info" />
+		<put name="body" value="/UpdatePersonalAddressInfo.jsp" />
+	</definition>
+	<definition name="review" extends="mainLayout">
+		<put name="title" value="Adress Info" />
+		<put name="body" value="/UpdatePersonalInfoReview.jsp" />
+	</definition>
+	<definition name="personalInfoStatus" extends="mainLayout">
+		<put name="title" value="Adress Info" />
+		<put name="body" value="/PersonalInfoStatus.jsp" />
+	</definition>
+
+
+
+</tiles-definitions>
